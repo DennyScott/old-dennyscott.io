@@ -2,7 +2,7 @@ import { preToCodeBlock } from 'mdx-utils';
 import React from 'react';
 import { Provider } from 'react-redux';
 import { MDXProvider } from '@mdx-js/tag';
-import { Code } from './src/components/code';
+import { Code } from './src/components/Code';
 
 import createStore from './src/state/store';
 
