@@ -41,6 +41,7 @@ const styles = theme => ({
 
 class PostShare extends React.Component {
   render() {
+    if(!post) return null;
     const { post, classes, slug } = this.props;
     const { excerpt, frontmatter } = post;
     const { title } = frontmatter;

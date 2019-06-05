@@ -18,7 +18,7 @@ A portfolio I threw together a number of years ago to highlight some game develo
 
 ![GamePortfolio](./images/game.png)
 
-[Demo](https://dennyscott.games.io) | [Github repo](https://github.com/DennyScott/zephyr-lab)
+[Demo](https://games.dennyscott.io) | [Github repo](https://github.com/DennyScott/zephyr-lab)
 
 
 
