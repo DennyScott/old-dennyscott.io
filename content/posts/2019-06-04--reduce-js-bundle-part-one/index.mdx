@@ -32,7 +32,6 @@ cd bundle-test
 npm run build
 ```
 
-![image-20190526192210159](/Users/dennyscott/Library/Application Support/typora-user-images/image-20190526192210159.png)
 
 We will get into what these other "chunks" are later in the series; we're just interested in the `main.#.chunk.js.` This chunk is the collection of all our components packaged into a single file by webpack. Any new code we write will be added to this chunk and downloaded as a single bundle.
 
@@ -56,8 +55,6 @@ Let's glance at some case studies to cement this assumption further. If you're n
 So *performance*, or more specifically in our case, *load time*, has a substantial impact on our customers. However, how do we determine what our load time is? We could make changes that we hear about online, and hope for the best, but there are many stories of people making cut-and-paste "optimized" changes, which caused performance degradation. Because a strategy works in one place, it doesn't mean it works in all cases. We need to make educated optimizations!
 
 The best thing we can do at this step is to measure our application. The best part, these tools are built into Chrome now, and are crazy easy to use! The first step is to open our developer tools on any page, go to the audits tab, and run the audit. This audit runs [Lighthouse](https://developers.google.com/web/tools/lighthouse/), an open-source, automated tool for improving the quality of our web app. Without any configuration, it will run through our app and break down a ton of metrics for us. Even better, we can dig into these metrics and Lighthouse will give us some great tips on what we can improve, and how to do it.
-
-![image-20190112172505883](/Users/dennyscott/Library/Application Support/typora-user-images/image-20190112172505883.png)
 
 Outside of Lighthouse, there are a ton of other tools we can use to try and measure our application. That's a bit out of the scope of this post, but we will play around a bit with the performance tab later in this series. The performance tab allows us to see a detailed flame chart, as well as other metrics, and analyze what is explicitly loading, calling, and compiling at a given time.
 
