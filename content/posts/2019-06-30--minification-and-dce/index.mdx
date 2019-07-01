@@ -65,7 +65,7 @@ Many minifications tools, like [Terser](https://github.com/terser-js/terser), al
 
 First, create a folder for this project. 
 
-```
+```bash
 mkdir dce-example
 cd dce-example
 ```
@@ -74,19 +74,19 @@ Add the `selectClothes` code above into a `dce-example/index.js.`
 
 Finally, let's create an npm package.
 
-```
+```bash
 npm init
 ```
 
 Once that's initialized we can add Terser.
 
-```
+```bash
 npm i terser --save-dev
 ```
 
 Now, let's take a first pass with Terser. Run
 
-```
+```bash
 npx terser index.js
 ```
 
@@ -140,7 +140,7 @@ npm i webpack webpack-cli --save-dev
 
 We'll be adding and moving a couple files here. First, we are going to add a folder called `dist` and `src.` 
 
-```
+```bash
 mkdir dist
 mkdir src
 ```
@@ -161,7 +161,7 @@ Inside of dist, we will add the index.html file:
 
 Then we are going to navigate to our `/src` folder at the root of our project, and move `index.js` into it. 
 
-```
+```bash
 mv index.js src/
 ```
 
@@ -171,7 +171,7 @@ Lastly, we need to go into our package.json, and remove the `main` property, and
 {
     "name": "webpack-terser-example",
     "version": "1.0.0",
-    "description": "".
+    "description": "",
     "private": true,
     "scripts": {},
     "author": "",
@@ -185,7 +185,7 @@ Lastly, we need to go into our package.json, and remove the `main` property, and
 
 Our project is set up, so we'll return to the root of the project, and run the webpack CLI tool. 
 
-```
+```bash
 npx webpack
 ```
 
