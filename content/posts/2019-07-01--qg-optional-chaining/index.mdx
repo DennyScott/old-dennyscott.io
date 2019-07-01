@@ -30,7 +30,7 @@ function getUserForPhoneDirectory(person) {
 getUserForPhoneDirectory(personOne);  //expect: Denny Scott - 555-555-5555
 ```
 
-Now, this is obviously a somewhat convoluted example, there's no reason not to make these seperate inputs, but it's pretty common to get a set of values, and frequently test to see if those each chained property exists before performing an action on them. This happens a lot in selectors and reducers if you're not careful. And if you don't do this checking, and the passed variable is undefined, we get the all too classic error.
+Now, this is obviously a somewhat convoluted example, there's no reason not to make these separate inputs, but it's pretty common to get a set of values, and frequently test to see if those each chained property exists before performing an action on them. This happens a lot in selectors and reducers if you're not careful. And if you don't do this checking, and the passed variable is undefined, we get the all to classic error.
 
 ![error](https://raw.githubusercontent.com/DennyScott/dennyscott.io/master/content/posts/2019-07-01--qg-optional-chaining/error.png)
 
@@ -54,7 +54,7 @@ Of course, from there, these have to be adopted by each browser, who need to ful
 
 # How do I use it today?
 
-Lets quickly set up a small project demo to try this out on. First, we'll create a directory to work in and create a package file. 
+Let's quickly set up a small project demo to try this out on. First, we'll create a directory to work in and create a package file. 
 
 ```bash
 mkdir optional-chaining-demo
