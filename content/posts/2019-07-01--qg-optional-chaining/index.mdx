@@ -27,7 +27,7 @@ function getUserForPhoneDirectory(person) {
   }
 }
 
-getUserForPhoneDirectory(personOne);  //expect: Denny Scott - 555-555-5555
+getUserForPhoneDirectory(personOne);  //expected: Denny Scott - 555-555-5555
 ```
 
 Now, this is obviously a somewhat convoluted example, there's no reason not to make these separate inputs, but it's pretty common to get a set of values, and frequently test to see if those each chained property exists before performing an action on them. This happens a lot in selectors and reducers if you're not careful. And if you don't do this checking, and the passed variable is undefined, we get the all to classic error.
@@ -91,7 +91,7 @@ function getUserForPhoneDirectory(person) {
   }
 }
 
-getUserForPhoneDirectory(personOne);  //expect: Denny Scott - 555-555-5555
+getUserForPhoneDirectory(personOne);  //expected: Denny Scott - 555-555-5555
 ```
 
 The project's all set up now, we can try running babel, along with the plugin, on our code.
