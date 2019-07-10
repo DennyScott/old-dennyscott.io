@@ -122,7 +122,7 @@ component rendered
 
 > Note, your's might have a circled 3, instead of individual prints
 
-Why did it run the component all three times, when the input was the same each time. Well, `memo` does attempt to do memoization, but not to the component generation, but rather to the instance of the component. That is to say, for a given component, if there is an attempt to render the same component, but the props have not changed, we will instead render the same result as last time. Let's look at an example
+Why did it run the component all three times, when the input was the same each time? Well, `memo` does attempt to do memoization, but not to the component generation, but rather to the instance of the component. That is to say, for a given component, if there is an attempt to render the same component, but the props have not changed, we will instead render the same result as last time. Let's look at an example
 
 ```javascript
 import React, { memo, useState } from "react";
@@ -153,7 +153,7 @@ export default App;
 
 
 
-![memo](https://raw.githubusercontent.com/DennyScott/dennyscott.io/master/content/posts/2019-07-09--memo-vs-memoize/memo.gif)
+![memo](https://raw.githubusercontent.com/DennyScott/dennyscott.io/master/content/posts/2019-07-09--qg-memo-vs-memoize/memo.gif)
 
 As you can see, despite the parent component being rerendered, the internal component never actually rerenders, as it has the same props, and therefore just returns the previous result. 
 
